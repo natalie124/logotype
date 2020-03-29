@@ -1,0 +1,24 @@
+.user-nav
+  .user-nav__container.container
+    .col-3.user-nav__logo
+      a(href="#" title="Логотип LOGOtype")
+        +svg("logo", 254, 55)
+    .user-nav__container.col-9      
+      .user-nav__search
+        form
+          input(type="text" id="search" name="search" placeholder="Что Вы ищите?")
+          label.visually-hidden(for="search") Что Вы ищете?
+          button(type="submit" title="Найти")
+            +svg("loupe", 20, 20)
+      ul.user-nav__list
+        li.user-nav__item
+          a.user-nav__link(href="#" title="Личный кабинет")
+            +svg("user", 26, 26)
+        li.user-nav__item
+          a.user-nav__link(href="#" title="Избранное")
+            +svg("heart", 28, 24)
+            span 3
+        li.user-nav__item
+          a.user-nav__link(href="#" title="Корзина")
+            +svg("cart", 28, 26)
+            span 2

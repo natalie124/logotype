@@ -1,0 +1,26 @@
+.products {
+  width: 100%;
+  padding-bottom: 70px;
+  margin-bottom: 45px;
+
+  border-bottom: 1px solid #efefef;
+
+  &__gallery {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+}

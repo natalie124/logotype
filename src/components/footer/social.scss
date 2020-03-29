@@ -1,0 +1,41 @@
+.social {
+  margin: 0;
+  padding: 0 0 10px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  list-style: none;
+
+  &__item {
+    margin-left: 44px;
+
+    &:first-child {
+      margin-left: 0;
+    } 
+  }
+
+  &__link {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+
+    &:hover,
+    &:focus {
+      svg {
+        fill: $white;
+      }
+    }
+
+    svg {
+      max-width: 100%;
+
+      fill: $dark-grey;
+
+      transition-property: fill;
+      transition-duration: 0.3s;
+    }
+  }
+}

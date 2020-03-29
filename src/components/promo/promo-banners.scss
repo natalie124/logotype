@@ -1,0 +1,87 @@
+.promo-banners {
+  width: 100%;
+  margin-bottom: 30px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+
+    width: 262px;
+    min-height: 172px;
+    margin: 15px 15px 15px 0;
+    padding: 21px 22px 20px;
+
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, #0087C0 0%, #3EC4F2 79%);
+    box-shadow: 0 38px 28px -28px rgba(0, 0, 0, .35);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__img {
+    position: absolute;
+
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    width: 70%;
+    min-height: 100%;
+  }
+
+  &__title {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 0;
+
+    @include font-main(20px, 26px, 700, $white);
+    letter-spacing: 0.025em;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    margin-bottom: 5px;
+
+    @include font-main(14px, 1.2, 600, $font-light-blue);
+    letter-spacing: 0.05em;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &__btn {
+    margin-top: auto;
+  }
+}

@@ -1,0 +1,75 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+
+  padding: 14px 48px;
+
+  @include font-main(16px, 25px, 700, $white);
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: $dark;
+  border-radius: 3px;
+  border: none;
+
+  transition-property: background-color;
+  transition-duration: 0.3s;
+
+  &:hover,
+  &:focus {
+    background-color: $green;
+  }
+}
+
+.button-round {
+  position: relative;
+
+  display: inline-block;
+  vertical-align: baseline;
+
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+
+  background-color: $dark;
+  border-radius: 50%;
+  border: none;
+
+  transition-property: background-color;
+  transition-duration: 0.3s;
+
+  outline: none;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    top: calc(50% - 3.5px);
+    left: calc(50% - 4px);
+    width: 7px;
+    height: 7px;
+
+    background-color: transparent;
+    border-right: 1px solid $white;
+    border-bottom: 1px solid $white;
+    transform: rotate(-45deg);
+
+    content: "";
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $blue;
+  }
+
+  &--prev {
+    margin-right: 5px;
+    
+    &::after {
+      left: calc(50% - 2px);
+
+      transform: rotate(135deg);
+    }
+  }
+}

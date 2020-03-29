@@ -1,0 +1,64 @@
+.subscribe {
+  width: 100%;
+
+  &__title {
+    text-align: center;
+
+    width: 100%;
+    margin: 0 0 34px;
+    padding: 0;
+
+    @include font-main(24px, 26px, 700, $dark);
+  }
+
+  form {
+    box-shadow: 0 9px 25px 0px rgba(0,0,0,.1);
+  }
+
+  &__form {
+    position: relative;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    border-radius: 4px;
+
+    overflow: hidden;
+  }
+
+  &__input {
+    flex-grow: 2;
+
+    background-color: $white;
+
+    input {
+      width: 100%;
+      padding: 11px 32px;
+
+      @include font-main(18px, 36px, 600, #6f6f6f);
+      letter-spacing: 0.025em;
+
+      background-color: transparent;
+      border: none;
+    }
+  }
+
+  &__btn {
+    padding: 18px 55.5px;
+
+    line-height: 22px;
+
+    background-color: #009ee2;
+    background-image: linear-gradient(-90deg, $dark-blue 0%, $light-blue 100%);
+    border-radius: 0;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-image: none;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+footer.footer
+  .container
+    .col-3
+      .footer__logo
+        a(href="#" title="Логотип LOGOtype")
+          +svg("logo", 254, 55)
+        span.footer__text официальный представитель в России
+      .footer__links
+        a.footer__link(href="#") Скачать каталог 2020
+        a.footer__link(href="#") Связаться с нами
+    .col-9    
+      .footer__content
+        .footer__info
+          .footer__title Компания
+          ul.footer__list
+            each item in companyMenuItems
+              li.footer__item
+                a.footer__text.footer__text--link(href="#") !{item}
+        .footer__info
+          .footer__title  Покупателям
+          ul.footer__list
+            each item in customersFooterItems
+              li.footer__item
+                a.footer__text.footer__text--link(href="#") !{item}
+        .footer__info
+          .footer__title  Оптовикам
+          ul.footer__list
+            li.footer__item
+              a.footer__text.footer__text--link(href="tel:88000000000") 8(800)000-00-00
+            li.footer__item
+              a.footer__text.footer__text--link(href="tel:88000000000") 8(800)000-00-00
+            li.footer__item
+              a.footer__text.footer__text--link(href="tel:88000000000") 8(800)000-00-00
+            li.footer__item
+              a.footer__link(href="mailto:info@mail.ru") info@mail.ru
+        .footer__info
+          .footer__title  Контакты
+          ul.footer__list
+            li.footer__item
+              p.footer__text г. Москва, ул. Иванова д. 5, пом. 8, оф. 11
+            li.footer__item
+              a.footer__text.footer__text--link(href="tel:88000000000") 8(800)000-00-00
+            li.footer__item
+              a.footer__text.footer__text--link(href="tel:88000000000") 8-800-000-00-00
+            li.footer__item
+              a.footer__link(href="mailto:info@mail.ru") info@yandex.ru 
+    .col-12            
+      .footer__copyright
+        p.footer__text © 2010-2019 Ltd. Все права защищены.
+        include social

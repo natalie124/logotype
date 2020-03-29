@@ -1,0 +1,27 @@
+@mixin font-main($size, $height, $weight, $color) {
+  font-family: $font-main;
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  color: $color;
+}
+
+@mixin menu-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin button-reset {
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+}

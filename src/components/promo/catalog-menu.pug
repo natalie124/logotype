@@ -1,0 +1,12 @@
+ul.catalog-menu
+  each item in catalogMenuItems
+    if item.submenu
+      li.catalog-menu__item.catalog-menu__item--drop
+        a.catalog-menu__link(href="#") !{item.name}
+        ul.catalog-menu__submenu
+          - for (var x = 0; x < item.submenu.length; x++)
+            li.catalog-menu__item
+              a.catalog-menu__link(href="#") !{item.submenu[x]}   
+    else
+      li.catalog-menu__item
+        a.catalog-menu__link(href="#") !{item.name}

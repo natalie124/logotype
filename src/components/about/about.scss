@@ -1,0 +1,15 @@
+.about {
+  margin-bottom: 84px;
+
+  &__header h2 {
+  	letter-spacing: 0;
+  }
+  
+  &__text {
+    margin: 0 0 25px;
+    padding: 0;
+
+    @include font-main(14px, 25px, 600, $dark);
+    letter-spacing: 0.025em;
+  }
+}

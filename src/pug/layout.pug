@@ -1,0 +1,35 @@
+include mixins
+
+block variables
+- let mainTitle = "LOGOtype";
+- let description = "Все для рыбалки. Катушки, удилища, приманки, воблеры, лески и шнуры, поплавки, крючки, аксессуары, одежда, снаряжение, электроника, зимняя рыбалка. Доставка. Оплата";
+
+doctype html
+html( lang="ru" )
+  head
+    meta( charset="UTF-8" )
+    title #{mainTitle} !{title && "| " + title}
+    meta( name="description" content= "" + description )
+    meta( name="viewport" content="width=device-width, initial-scale=1.0" )
+
+    link( rel="preload" href="fonts/Panton-Regular.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/Panton-Bold.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/Panton-SemiBold.woff2" as="font" type="font/woff2" crossorigin )
+    link( rel="preload" href="fonts/Panton-ExtraBold.woff2" as="font" type="font/woff2" crossorigin )
+    
+    link( rel="stylesheet" href="css/style.min.css" )
+  body
+
+    .sprite(style="display:none")
+      include ../../build/img/sprite.svg
+
+    .wrapper
+
+      include ../components/header/header
+
+      block content
+
+      include ../components/footer/footer
+
+      script( src="js/vendor.min.js" )
+      script( src="js/script.min.js" )

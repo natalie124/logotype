@@ -1,0 +1,24 @@
+.stock
+  .container
+    .col-6
+      .stock__item
+        .stock__img.img-offset-right-left.img-offset-top
+          +picture-jpg-png("fishing-line", 172, 297, "Скидка на все лески")
+        .stock__content
+          a.stock__title(href="#")
+            span Скидка <span class="stock__date">до 15 декабря </span>
+            span на все лески
+          span.stock__discount -30%    
+          a.stock__btn.button-round(href="#" title="Смотреть лески")
+          
+    .col-6
+      .stock__item
+        .stock__img.img-offset-right-left.img-offset-bottom
+          +picture-jpg-png("coils", 203, 274, "Скидка на катушки")
+        .stock__content
+          a.stock__title(href="#")
+            span Скидка <span class="stock__date">до 31 января </span>
+            span на катушки
+          span.stock__discount -10%   
+          a.stock__btn.button-round(href="#" title="Смотреть лески")
+          

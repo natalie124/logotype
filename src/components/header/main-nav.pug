@@ -1,0 +1,12 @@
+.main-nav
+  .container
+    .col-3
+      .main-nav__catalog
+        button(type="button" title="Открыть меню")
+          span
+        a(href="#") Каталог товаров
+    .col-9    
+      ul.main-nav__list
+        each item in companyMenuItems
+          li.main-nav__item
+            a.main-nav__link(href="#") !{item}

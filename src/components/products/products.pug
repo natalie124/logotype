@@ -1,0 +1,212 @@
+section.products
+  .container
+    .col-12.col-np
+      .products__header.content-header
+        h2.content-header__title Хиты продаж
+        a.content-header__link(href="#") Весь каталог
+        .products__nav.content-header__nav
+          button.button-round.button-round--prev.products__prev(type="button" title="Предыдущий слайд")
+          button.button-round.products__next(type="button" title="Следующий слайд")
+      .products__gallery      
+        ul.products__list.swiper-wrapper
+
+          li.products__item.card.card--advertising.swiper-slide
+            a.card__container(href="#")
+              .card__img
+                +picture-jpg-png("card-bestseller", 263, 449, "Бестселлер катушка Adrenalin 7300 BC")
+              .card__content  
+                p.card__title Бестселлер
+                p.card__text катушка Adrenalin 7300 BC
+                p.card__price 4 800 р.  
+              
+          li.products__item.card.swiper-slide
+            .card__container
+              a.card__img(href="#" title="Удилище Matze Koch Rollen")
+                +picture-jpg-png("card-1", 236, 199, "Удилище Matze Koch Rollen")
+              ul.card__marks
+                li.card__mark.card__mark--discount
+                  span Скидка
+                li.card__mark.card__mark--active.card__mark--hit
+                  span Хит
+              .card__likes
+                ul.card__stars
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                button.card__favourites(type="button", title="Добавить в избранное")
+                  +svg("heart", 22, 19)
+              .card__content     
+                a.card__title(href="#")
+                  span Удилище
+                  span Matze Koch Rollen
+                p.card__price
+                  span.card__new-price 13 490 р.
+                button.card__btn.button В корзину
+
+          li.products__item.card.swiper-slide
+            .card__container
+              a.card__img(href="#" title="Приманка Matze Koch Rollen")
+                +picture-jpg-png("card-2", 240, 230, "Приманка Matze Koch Rollen")
+              ul.card__marks
+                li.card__mark.card__mark--active.card__mark--discount
+                  span Скидка
+                li.card__mark.card__mark--active.card__mark--hit
+                  span Хит
+              .card__likes
+                ul.card__stars
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star", 15, 15)
+                button.card__favourites(type="button", title="Добавить в избранное")
+                  +svg("heart", 22, 19)
+              .card__content    
+                a.card__title(href="#")
+                  span Приманка
+                  span Matze Koch Rollen
+                p.card__price
+                  span.card__new-price 3 240 р.
+                  span.card__old-price 6200 р.
+                  span.card__benefit Ваша выгода <span>3 200 р.</span> 
+                button.card__btn.button В корзину
+
+          li.products__item.card.swiper-slide
+            .card__container
+              a.card__img(href="#" title="Катушка Matze Koch Rollen")
+                +picture-jpg-png("card-3", 246, 246, "Катушка Matze Koch Rollen")
+              ul.card__marks
+                li.card__mark.card__mark--discount
+                  span Скидка
+                li.card__mark.card__mark--active.card__mark--hit
+                  span Хит
+              .card__likes
+                ul.card__stars
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                button.card__favourites(type="button", title="Добавить в избранное")
+                  +svg("heart", 22, 19)
+              .card__content     
+                a.card__title(href="#")
+                  span Катушка
+                  span Matze Koch Rollen
+                p.card__price
+                  span.card__new-price 5 600 р.
+                button.card__btn.button В корзину
+
+          li.products__item.card.swiper-slide
+            .card__container
+              a.card__img(href="#" title="Катушка Matze Koch Rollen")
+                +picture-jpg-png("card-1", 236, 199, "Катушка Matze Koch Rollen")
+              ul.card__marks
+                li.card__mark.card__mark--discount
+                  span Скидка
+                li.card__mark.card__mark--active.card__mark--hit
+                  span Хит
+              .card__likes
+                ul.card__stars
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                button.card__favourites(type="button", title="Добавить в избранное")
+                  +svg("heart", 22, 19)
+              .card__content     
+                a.card__title(href="#")
+                  span Катушка
+                  span Matze Koch Rollen
+                p.card__price
+                  span.card__new-price 5 600 р.
+                button.card__btn.button В корзину
+
+          li.products__item.card.swiper-slide
+            .card__container
+              a.card__img(href="#" title="Катушка Matze Koch Rollen")
+                +picture-jpg-png("card-1", 236, 199, "Катушка Matze Koch Rollen")
+              ul.card__marks
+                li.card__mark.card__mark--discount
+                  span Скидка
+                li.card__mark.card__mark--active.card__mark--hit
+                  span Хит
+              .card__likes
+                ul.card__stars
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                button.card__favourites(type="button", title="Добавить в избранное")
+                  +svg("heart", 22, 19)
+              .card__content     
+                a.card__title(href="#")
+                  span Катушка
+                  span Matze Koch Rollen
+                p.card__price
+                  span.card__new-price 5 600 р.
+                button.card__btn.button В корзину
+
+          li.products__item.card.swiper-slide
+            .card__container
+              a.card__img(href="#" title="Катушка Matze Koch Rollen")
+                +picture-jpg-png("card-1", 236, 199, "Катушка Matze Koch Rollen")
+              ul.card__marks
+                li.card__mark.card__mark--discount
+                  span Скидка
+                li.card__mark.card__mark--active.card__mark--hit
+                  span Хит
+              .card__likes
+                ul.card__stars
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                  li.card__star
+                    +svg("star-check", 15, 15)
+                button.card__favourites(type="button", title="Добавить в избранное")
+                  +svg("heart", 22, 19)
+              .card__content     
+                a.card__title(href="#")
+                  span Катушка
+                  span Matze Koch Rollen
+                p.card__price
+                  span.card__new-price 5 600 р.
+                button.card__btn.button В корзину                            
+
+
+                      
+            

@@ -1,0 +1,105 @@
+.customers-nav {
+  width: 100%;
+  min-height: 45px;
+
+  color: $white;
+  
+  background-color: $dark;
+
+  &__container {
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    max-width: 795px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    position: relative;
+
+    margin-right: 15px;
+    padding-right: 25px;
+
+    &::after {
+      position: absolute;
+      top: calc(50% - 4.5px);
+      right: 0;
+
+      width: 9px;
+      height: 9px;
+
+      background-color: transparent;
+      border: 2px solid #6a6a6a;
+      border-radius: 50%;
+
+      content: "";
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+
+  &__link {
+    display: inline-block;
+    vertical-align: baseline;
+
+    padding: 10px 14px;
+
+    @include font-main(14px, 25px, 400, $white)
+    letter-spacing: 0.025em;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  &__phone {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    @include font-main(13px, 25px, 400, $white);
+    letter-spacing: 0.025em;
+
+    span {
+      padding: 10px 15px;
+    }
+
+    p {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      margin: 0 2px 0 3px;
+      padding: 0;
+    }
+
+    a {
+      padding: 10px 15px;
+
+      @include font-main(20px, 25px, 700, $font-blue);
+      letter-spacing: 0.025em;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}

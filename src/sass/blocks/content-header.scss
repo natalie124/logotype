@@ -1,0 +1,37 @@
+.content-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 44px;
+  padding: 0 15px;
+
+  &__title {
+    margin: 0 25px 0 0;
+    padding: 0;
+
+    @include font-main(36px, 1, 800, $dark);
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    margin-top: 14px;
+
+    @include font-main(11px, 1, 700, #009ee2);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  &__nav {
+    margin-left: auto;
+  }
+}

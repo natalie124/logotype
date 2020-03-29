@@ -1,0 +1,52 @@
+.news {
+  position: relative;
+
+  width: 100%;
+  padding-bottom: 43px;
+  margin-bottom: 57px;
+
+  &::after {
+    position: absolute;
+    top: 295px;
+    z-index: -1;
+
+    width: 100%;
+    height: calc(100% - 295px);
+
+    background-color: $grey;
+    content: "";
+  }
+
+  &__header {
+    margin-bottom: 62px;
+  }
+
+  &__gallery {
+    position: relative;
+
+    width: 100%;
+    margin-bottom: 23px;
+
+    overflow: hidden;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__item {
+    width: 33.34%;
+    min-width: 33.34%;
+  }
+
+  &__subscribe {
+    background-color: #efefef;
+  }
+}

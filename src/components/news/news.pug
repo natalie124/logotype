@@ -1,0 +1,88 @@
+section.news
+  .container
+    .col-12.col-np
+      .news__header.content-header
+        h2.content-header__title Последние новости
+        a.content-header__link(href="#") все новости
+        .news__nav.content-header__nav
+          button.button-round.button-round--prev.news__prev(type="button" title="Предыдущий слайд")
+          button.button-round.news__next(type="button" title="Следующий слайд")
+
+      .news__gallery
+        ul.news__list.swiper-wrapper
+          li.news__item.swiper-slide.news-card
+            .news-card__container
+              a.news-card__img(href="#")
+                +picture-jpg-webp("news-1", 360, 209, "Презентация нового продукта")
+              span.news-card__date 13.02.2019
+              .news-card__content
+                h3.news-card__title Презентация нового продукта
+                p.news-card__text 
+                  span Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных<span class="news-card__dot">...</span>
+                a.news-card__link(href="#") Подробнее
+
+          li.news__item.swiper-slide.news-card
+            .news-card__container
+              a.news-card__img(href="#")
+                +picture-jpg-webp("news-2", 360, 209, "Презентация нового продукта")
+              span.news-card__date 13.02.2019
+              .news-card__content
+                h3.news-card__title Презентация нового продукта
+                p.news-card__text 
+                  span Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных<span class="news-card__dot">...</span>
+                a.news-card__link(href="#") Подробнее
+
+          li.news__item.swiper-slide.news-card
+            .news-card__container
+              a.news-card__img(href="#")
+                +picture-jpg-webp("news-3", 360, 209, "Презентация нового продукта")
+              span.news-card__date 13.02.2019
+              .news-card__content
+                h3.news-card__title Презентация нового продукта
+                p.news-card__text 
+                  span Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных<span class="news-card__dot">...</span>
+                a.news-card__link(href="#") Подробнее
+
+          li.news__item.swiper-slide.news-card
+            .news-card__container
+              a.news-card__img(href="#")
+                +picture-jpg-webp("news-1", 360, 209, "Презентация нового продукта")
+              span.news-card__date 13.02.2019
+              .news-card__content
+                h3.news-card__title Презентация нового продукта
+                p.news-card__text 
+                  span Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных<span class="news-card__dot">...</span>
+                a.news-card__link(href="#") Подробнее
+            
+          li.news__item.swiper-slide.news-card
+            .news-card__container
+              a.news-card__img(href="#")
+                +picture-jpg-webp("news-1", 360, 209, "Презентация нового продукта")
+              span.news-card__date 13.02.2019
+              .news-card__content
+                h3.news-card__title Презентация нового продукта
+                p.news-card__text 
+                  span Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных<span class="news-card__dot">...</span>
+                a.news-card__link(href="#") Подробнее
+          
+          li.news__item.swiper-slide.news-card
+            .news-card__container
+              a.news-card__img(href="#")
+                +picture-jpg-webp("news-1", 360, 209, "Презентация нового продукта")
+              span.news-card__date 13.02.2019
+              .news-card__content
+                h3.news-card__title Презентация нового продукта
+                p.news-card__text 
+                  span Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных<span class="news-card__dot">...</span>
+                a.news-card__link(href="#") Подробнее               
+  .news__subscribe
+    .container
+      .col-12
+        .subscribe
+          h3.subscribe__title Подпишитесь на рассылку и будьте в курсе новостей, акций, новинок
+          form(action="#")
+            .subscribe__form
+              .subscribe__input
+                input(type="email" id="subscribe" placeholder="Ваш email" required)
+                label.visually-hidden(for="subscribe") Ваш email
+              button.subscribe__btn.button(type="submit") Подписаться

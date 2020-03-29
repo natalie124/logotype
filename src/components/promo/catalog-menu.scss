@@ -1,0 +1,136 @@
+.catalog-menu {
+  position: relative;
+
+  margin: 0 0 30px;
+  padding: 0 0 0 15px;
+
+  list-style: none;
+  box-shadow: 0 38px 28px -28px rgba(0, 0, 0, .2);
+
+  &__item {
+    padding-right: 15px;
+
+    background-color: transparent;
+    border-bottom: 2px solid $white;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &--drop {
+      transition-property: background-color, border-color;
+      transition-duration: 0.3s;
+
+      &:hover,
+      &:focus {
+        background-color: #e5e5e5;
+        border-color: #e5e5e5;
+
+        .catalog-menu__link {
+          background-color: #e5e5e5;
+        }
+
+        .catalog-menu__submenu {
+          display: block;
+
+          opacity: 1;
+
+          animation: fadein 0.4s;
+        }
+      }
+
+      > .catalog-menu__link::after {
+        position: absolute;
+        right: 18px;
+        top: calc(50% - 5px);
+
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid #b2b2b2;
+        border-bottom: 2px solid #b2b2b2;
+
+        transform: rotate(-45deg);
+
+        transition-property: border-color;
+        transition-duration: 0.3s;
+
+        content: "";
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;  
+    padding: 0 41px 0 60px;
+
+    background-color: $grey;
+
+    @include font-main(15px, 45px, 700, $dark);
+    letter-spacing: 0.05em;
+    text-decoration: none;
+
+    transition-property: color, background-color;
+    transition-duration: 0.3s;
+
+    &:hover,
+    &:focus {
+      color: $font-blue;
+
+      &::before,
+      &::after {
+        border-color: $font-blue;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      left: 23px;
+      top: calc(50% - 5px);
+
+      width: 11px;
+      height: 11px;
+
+      background-color: transparent;
+      border: 3px solid $dark;
+      border-radius: 50%;
+
+      transition-property: border-color;
+      transition-duration: 0.3s;
+
+      content: "";
+    }
+  }
+
+  &__submenu {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    z-index: 10;
+
+    display: none;
+
+    width: 307px;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    background-color: #e5e5e5;
+    box-shadow: 0 38px 28px -28px rgba(0, 0, 0, .35);
+    opacity: 0;
+
+    .catalog-menu__item {
+      border-color: transparent;
+    }
+
+    .catalog-menu__link {
+      background-color: #e5e5e5;
+    }
+  }
+}

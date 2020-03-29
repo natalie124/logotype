@@ -1,0 +1,39 @@
+/* Panton-Regular */
+@font-face {
+  font-family: "Panton";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Panton-Regular.woff2") format("woff2"),
+       url("../fonts/Panton-Regular.woff") format("woff");
+}
+/* Panton-SemiBold */
+@font-face {
+  font-family: "Panton";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+
+  src: url("../fonts/Panton-SemiBold.woff2") format("woff2"),
+       url("../fonts/Panton-SemiBold.woff") format("woff");
+}
+/* Panton-Bold */
+@font-face {
+  font-family: "Panton";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+
+  src: url("../fonts/Panton-Bold.woff2") format("woff2"),
+       url("../fonts/Panton-Bold.woff") format("woff");
+}
+/* Panton-ExtraBold */
+@font-face {
+  font-family: "Panton";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+
+  src: url("../fonts/Panton-ExtraBold.woff2") format("woff2"),
+       url("../fonts/Panton-ExtraBold.woff") format("woff");
+}

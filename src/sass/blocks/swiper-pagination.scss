@@ -1,0 +1,32 @@
+.swiper-pagination {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin-right: 23px;
+
+  background-color: transparent;
+  border: 3px solid $white;
+  border-radius: 50%;
+
+  transition-property: border-color;
+  transition-duration: 0.3s;
+
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  border-color: #3dc3f2;
+}
